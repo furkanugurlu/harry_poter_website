@@ -1,0 +1,180 @@
+.container {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerCart {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+}
+.inputText {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.364);
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.364);
+}
+.imgSearch {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  margin-bottom: 20px;
+  margin-right: 35px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.top img {
+  width: 100%;
+  height: 300px;
+  transition: 300ms ease;
+}
+.cart:hover .top img {
+  transform: scale(1.1);
+}
+.content {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content .character_info {
+  align-items: center;
+  justify-content: center;
+}
+.character_info span {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+}
+.character_info p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.right {
+  display: flex;
+}
+.btn {
+  font-size: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+.empty_data {
+  font-size: 20px;
+  color: tomato;
+  text-transform: uppercase;
+}
+.bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+}
+.bottom .detail_btn {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+/* user detail */
+
+.detailWrapper {
+  min-height: 400px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+}
+.detailWrapper img {
+  width: 230px;
+  height: 330px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.right p {
+  color: black;
+  margin-bottom: 30px;
+}
+.right p span {
+  font-weight: 900;
+}
+.inputWrapper {
+  display: flex;
+  width: 30%;
+  position: relative;
+}
+.pageTitle {
+  font-family: "Bebas Neue", cursive;
+}
+
+@media screen and (max-width: 1100px) {
+  .inputWrapper {
+    width: 40%;
+  }
+  .detailWrapper {
+    width: 90%;
+  }
+  .containerCart {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media screen and (max-width: 796px) {
+  .inputWrapper {
+    width: 50%;
+  }
+  .detailWrapper {
+    width: 100%;
+  }
+  .containerCart {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .cart {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 605px) {
+  .detailWrapper {
+    flex-direction: column;
+  }
+  .right {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pageTitle {
+    display: none;
+  }
+  .inputWrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+.footerWrapper {
+  border-top: 1px solid rgba(0, 0, 0, 0.144);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding: 60px 40px 60px 40px;
+}
+.footerIconWrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.iconWrapper {
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease;
+  cursor: pointer;
+}
+.icon {
+  font-size: 30px;
+  color: white;
+}
+.iconWrapper:hover {
+  background: #0a8d7c;
+}
+.footerText {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.footerText p {
+  color: rgba(0, 0, 0, 0.397);
+  font-size: 17px;
+}
+
+@media screen and (max-width: 420px) {
+  .footerText p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .footerText p {
+    font-size: 12px;
+  }
+}
+
+.topBtn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: black;
+  border: 1px solid black;
+  bottom: 20px;
+  right: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+}
+.topBtn p {
+  transform: translateY(30px);
+  transition: all 300ms ease;
+  color: black;
+}
+.topIcon {
+  transition: all 300ms ease;
+  transform: translateY(8px);
+}
+.topBtn:hover p {
+  transform: translateY(-7px);
+  text-decoration: none;
+}
+.topBtn:hover .topIcon {
+  transform: translateY(-50px);
+}
+
+.visible {
+  display: flex;
+  position: fixed;
+}
